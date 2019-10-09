@@ -32,7 +32,8 @@ shinyUI(fluidPage(
             tabsetPanel(
                 tabPanel('Data Table',tableOutput('dataTable')),
                 tabPanel('Income vs Expense',plotOutput('dataPlotIncome')),
-                tabPanel('Cash vs Expense',plotOutput('dataPlotCash'))
+                tabPanel('Cash vs Expense',plotOutput('dataPlotCash')),
+                tabPanel('About',includeMarkdown('about.md'))
             )
         )
         
