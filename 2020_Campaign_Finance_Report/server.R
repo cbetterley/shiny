@@ -24,7 +24,7 @@ shinyServer(function(input, output) {
         # inner join to apply the filters:
         df <- inner_join(df_origin, linkage_filtered, by='CAND_ID')
         
-        df <- filter(df, CAND_ID != 'P80003205')                  # Lee Mercer is a distracting outlier that is no longer in the race. His massive numbers seem to be rolled over from previous campaigns.
+        df <- filter(df, CAND_ID != 'P80003205')                  # Lee Mercer is a distracting outlier that is no longer in the race. Numbers are rolled over from previous campaigns.
         
     # Render:
     output$dataTable <- renderTable({    
