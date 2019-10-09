@@ -1,4 +1,5 @@
 library(shiny)
+library(markdown)
 
 shinyUI(fluidPage(
     titlePanel("USA 2020 Presidential Candidate Campaign Finance Summary (as of 2019 Q2)"),
